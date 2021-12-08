@@ -1,0 +1,10 @@
+version: "2.1"
+services:
+  nodejs-proxy:
+    image: queritel/proxy-server
+    container_name: nodejs-proxy
+    build:
+      context: .
+    ports:
+      - "8080:8080"
+
